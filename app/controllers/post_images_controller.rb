@@ -20,6 +20,9 @@ class PostImagesController < ApplicationController
   end
 
   def destroy
+    @post_image = 削除するPostImageレコードを取得
+    @post_image.削除
+    redirect_to PostImageの一覧ページのパス
   end
 
   private
